@@ -17,7 +17,7 @@ gg_record(dir = 'png-tmp', dpi = 320, width = 8, height = 4.5)
 set.seed(22)
 
 tenk <- long_grid(seq(1, 10, length.out = 100), seq(1, 10, length.out = 100))
-tenk$d <- gen_perlin(tenk$x, tenk$y, frequency = 0.25) 
+tenk$d <- gen_perlin(tenk$x, tenk$y, frequency = 0.5) 
 tenk$r <- sample(seq(0.2, 1, length.out = 10000))
 
 foreground <- tenk %>% as_tibble %>% slice_sample(n = 100)
@@ -30,8 +30,8 @@ ggplot() +
              color = NA, alpha = 0.9) +
   geom_regon(data = background, 
              aes(x0 = (x - 1) * 1.2, y0 = (y - 0.75) * 1.2, 
-                 r = r / 3, fill = d, sides = 3, angle = 0),
-             color = NA, alpha = 0.1) +
+                 r = r / 5, fill = d, sides = 3, angle = 0),
+             color = NA, alpha = 0.4) +
   scale_fill_gradient() +
   theme_void() +
   theme(
@@ -39,4 +39,4 @@ ggplot() +
     plot.background = element_rect(fill = "grey97", color = NA)
   )
 
-ggsave("genuary-2022-01.png", width = 8, height = 4.5)
+ggsave("2022-01/10000-triangles.png", width = 8, height = 4.5)
