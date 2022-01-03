@@ -17,6 +17,8 @@
 # RStudio files
 .Rproj.user/
 /*.Rproj
+.DS_Store
+
 
 # produced vignettes
 vignettes/*.html
@@ -35,3 +37,6 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# Temporary camcorder images
+png-tmp/*
