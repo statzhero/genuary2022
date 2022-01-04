@@ -29,8 +29,8 @@ alps[[2]] <- alps[[1]]
 ggdraw() +
   draw_plot(nebula) + 
   draw_image(image_border(image_read(alps_img), "gray95", "5x5"), 
-             scale = 0.25, x = 0.94, y = 0.15, hjust = 1, halign = 1, valign = 0)
+             scale = 0.25, x = 0.94, y = 0.07, hjust = 1, halign = 1, valign = 0)
 
 ggsave("2022-03/space.png", width = 8, height = 4.5)
-
+  
 
