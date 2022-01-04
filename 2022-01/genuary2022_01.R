@@ -1,6 +1,6 @@
 #' Genuary 2022
+#' Day 01
 #' Author: Ulrich Atz
-#' Date: 2022-01-03
 #' https://genuary.art/prompts
 #' --------------------------------------------
 #' Draw 10,000 of something.
